@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="prism.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="prism.js"></script>
+    <title>JavaScript CheatSheet</title>
+  </head>
+  <body>
+    <nav>
+      <span class="logo"><img src="copy.png" alt="logo" /></span>
+
+      <div class="Content Center">The JavaScript CheatSheet !</div>
+    </nav>
+    <div class="container">
+      <ol>
+        <li>
+          Including JavaScript in an HTML Page:
+
+          <pre class="language-js"><code> &lt;script type="text/javascript"&gt;
+        //JS code goes here 
+    &lt;/script&gt;</code></pre>
+        </li>
+        <li>
+          Call an External JavaScript File:
+          <pre class="language-js"><code>&ltscript src="myscript.js"&gt
+    &lt;/script&gt&ltcode&gt&lt/code&gt;
+                </code></pre>
+        </li>
+        <li>
+          Variables:
+          <pre class="language-js">
+<u>Var, Const, Let</u>
+    var->
+    The most common variable. Can be reassigned but only accessed within a function. Variables
+    defined with var move to the top when code is executed.
+
+    const->
+    Cannot be reassigned and not accessible before they appear within the code.
+
+    let->
+    Similar to const, however, let variable can be reassigned but not re-declared.
+
+    <u>Variables:</u>
+
+    var age = 23
+    Numbers
+    
+    var x
+    "Variables"
+    
+    var a = "init"
+    Text (strings)
+    
+    var b = 1 + 2 + 3
+    Operations
+    
+    var c = true
+    True or false statements
+    
+    const PI = 3.14
+    Constant numbers
+    
+    var name = {firstName:"Harshi", lastName:”babu"}
+
+    <u>Objects:</u>
+
+    var person = {
+    firstName:"Badmash",
+    lastName:"Golu",
+    age:5,
+    nationality:"Indian"
+};
+
+
+</pre>
+        </li>
+        <li>
+          Arrays:
+          <pre class="language-js">
+
+var fruit = ["Banana", "Apple", "Pear"];
+
+Array Methods:
+
+concat()
+Join several arrays into one.
+
+indexOf()
+Returns the first position at which a given element appears in an array.
+
+join()
+Combine elements of an array into a single string and return the string.
+
+lastIndexOf()
+Gives the last position at which a given element appears in an array.
+
+pop()
+Removes the last element of an array
+
+push()
+Add a new element at the end
+
+reverse()
+Reverse the order of the elements in an array
+
+shift()
+Remove the first element of an array
+
+slice()
+Pulls a copy of a portion of an array into a new array.
+
+sort()
+Sorts elements alphabetically
+
+splice()
+Adds elements in a specified way and position
+
+toString()
+Converts elements to strings
+
+unshift()
+Adds a new element to the beginning
+
+valueOf()
+Returns the primitive value of the specified object
+
+
+                </pre
+          >
+        </li>
+        <li>
+          Operators:
+
+          <pre class="language-js">
+                    
+<u>Operators</u>
+
+   + Addition
+    Subtraction
+   * Multiplication
+   / Division
+   (..) Grouping operator
+   % Modulus (remainder)
+   ++ Increment numbers
+   -- Decrement numbers
+
+<u>Comparison Operators</u>
+
+    == Equal to
+    === Equal value and equal type
+    != Not equal
+    !== Not equal value or not equal type
+    > Greater than
+    &lt Less than
+    >= Greater than or equal to
+    &lt= Less than or equal to
+
+<u>? Ternary operator></u>
+
+<u>Logical Operators</u>
+
+    && Logical and
+    || Logical or
+    ! Logical not
+
+<u>Bitwise Operators</u>
+    & AND statement
+    | OR statement
+    ~ NOT
+    ^ XOR
+    &lt&lt Left shift
+    >> Right shift
+    >>> Zero fill right shift
+
+                </pre>
+        </li>
+        <li>
+          Function:
+          <pre class="language-js">
+               <code>
+function name(parameter1, parameter2, parameter3) {
+        // what the function does
+    }   
+
+    <u>Outputting Data</u> 
+
+      alert()
+    Output data in an alert box in the browser window. 
+
+    confirm()
+    Opens up a yes/no dialog and returns true/false depending on user click.
+
+    console.log()
+    Writes information to the browser console, good for debugging purposes.
+    
+    document.write()
+    Write directly to the HTML document.
+
+    prompt()
+    Creates an dialogue for user input.
+
+    <u>Global Functions</u> 
+
+    decodeURI()
+    Decodes a Uniform Resource Identifier (URI) created by encodeURI or similar.
+
+    decodeURIComponent()
+    Decodes a URI component.
+
+    encodeURI()
+    Encodes a URI into UTF-8.
+
+    encodeURIComponent()
+    Same but for URI components.
+
+    eval()
+    Evaluates JavaScript code represented as a string.
+
+    isFinite()
+    Determines whether a passed value is a finite number.
+
+    isNaN()
+    Determines whether a value is NaN or not.
+
+    Number()
+    Returns a number converted from its argument.
+
+    parseFloat()
+    Parses an argument and returns a floating point number.
+
+    parseInt()
+    Parses its argument and returns an integer.
+</code>
+           </pre>
+        </li>
+
+        <li>
+          Loops:
+          <pre class="language-js">
+               <code>
+for (before loop; condition for loop; execute after loop) {
+    // what to do during the loop
+         }
+    for
+    The most common way to create a loop in Javascript.
+
+    while
+     Sets up conditions under which a loop executes.
+
+    do while
+    Similar to the while loop, however, 
+    it executes at least once and performs a check at the end to
+    see if the condition is met to execute again.
+
+    break
+    Used to stop and exit the cycle at certain conditions.
+
+    continue
+    Skip parts of the cycle if certain conditions are met.
+               </code>
+           </pre>
+        </li>
+    <li>
+        if-else Statement:
+    </li>
+      <pre class="language-js">
+    if (condition) {
+        // what to do if condition is met
+        } 
+    else {
+        // what to do if condition is not met
+        }
+            
+      </pre>
+      </ol>
+    </div>
+  </body>
+</html>
